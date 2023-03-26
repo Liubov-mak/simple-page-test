@@ -115,7 +115,7 @@ var openMenu = function openMenu() {
     menu = document.querySelector('.header__nav');
   burger.addEventListener("click", function () {
     burger.classList.toggle('active');
-    menu.classList.toggle('active');
+    menu.classList.toggle('b-show');
   });
 };
 openMenu();
