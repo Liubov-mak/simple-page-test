@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=6">
+    <meta name="description" content="Тестовое">
+    <meta name="theme-color" content="#ffffff">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Главная страница</title>
+    <meta name="keywords" content="">
+    <meta name="theme-color" content="#000000">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="images/logo.webp" type="image/x-icon">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="images/icon-192x192.png">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrap">
+          <div class="header__logo">LoremIpsum.<span>Net</span></div>
+          <nav class="header__nav">
+            <ul>
+              <li><a href="#">Бизнес</a></li>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Цены</a></li>
+              <li><a href="#">Оформить заказ</a></li>
+            </ul>
+          </nav>
+          <div class="header__burger js-burger"><span></span><span></span><span></span></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="intro">
+        <div class="container">
+          <div class="intro__wrap">
+            <h1 class="intro__heading">Lorem ipsum<span>dolor sit <br>amet consectetur</span>adipiscing</h1>
+            <p class="intro__title">At vero eos et accusamus et iusto odio dignissimos ducimus!</p>
+            <ul class="intro__list">
+              <li>Totam rem aperiam eaque ipsa</li>
+              <li>Sit voluptatem accusantium doloremque laudantium</li>
+              <li>Sed ut perspiciatis, unde omnis iste natus error</li>
+            </ul>
+            <div class="intro__activites">
+              <button class="intro__btn intro__btn_primary">заказать</button>
+              <button class="intro__btn intro__btn_secondary">подробнее</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="form-section">
+        <div class="container">
+          <div class="form-section__content">
+            <h2 class="form-section__content_title">Оформление<span>Заказа</span></h2>
+            <p class="form-section__content_text">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+          </div>
+          <div class="form-section__wrap">
+            <div class="form-section__advantage"><img width="100" height="100" src="/images/adv-1.webp" alt="adv-1"><span class="form-section__advantage_title">Lorem ipsum dolor sit amet</span></div>
+            <div class="form-section__advantage"><img width="100" height="100" src="/images/adv-2.webp" alt="adv-2"><span class="form-section__advantage_title">Сonsecteturadipiscing elit</span></div>
+            <div class="form-section__advantage"><img width="100" height="100" src="/images/adv-3.webp" alt="adv-3"><span class="form-section__advantage_title">Sed do eiusmod tempor</span></div>
+            <div class="form-section__advantage"><img width="100" height="100" src="/images/adv-4.webp" alt="adv-4"><span class="form-section__advantage_title">Esse cillum dolore eu fugiat</span></div>
+            <div class="form-section__advantage"><img width="100" height="100" src="/images/adv-5.webp" alt="adv-5"><span class="form-section__advantage_title">Excepteur sint occaecat cupidatat non proident</span></div>
+          </div>
+          <div class="form-section__info">
+            <form class="form" id="form">
+              <div class="form__holder">
+                <div class="form__wrapper">
+                  <div class="form__select"><span>Выберите тип системы</span>
+                    <ul class="form__select-list">
+                      <li><a href="#">Sed ut perspiciatis</a></li>
+                      <li><a href="#">Nemo enim ipsam</a></li>
+                      <li><a href="#">Et harum quidem</a></li>
+                      <li><a href="#">Temporibus autem</a></li>
+                      <li><a href="#">Itaque earum rerum</a></li>
+                      <li><a href="#">Sed ut perspiciatis</a></li>
+                      <li><a href="#">Nemo enim ipsam</a></li>
+                      <li><a href="#">Et harum quidem</a></li>
+                      <li><a href="#">Temporibus autem</a></li>
+                      <li><a href="#">Itaque earum rerum</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="form__wrapper">
+                  <label class="form__label" for="email"></label>
+                  <input class="form__input user-mail" type="email" name="email" id="email" placeholder="Ваш e-mail"><small class="alert-message"></small>
+                </div>
+                <div class="form__wrapper">
+                  <label class="form__label" for="name"></label>
+                  <input class="form__input user-name" type="text" name="name" id="name" placeholder="Ваше имя"><small class="alert-message"></small>
+                </div>
+              </div>
+              <div class="form__holder">
+                <div class="form__slider">
+                  <label for="sliderRange">Sed ut perspiciatis, unde omnis iste natus<span id="count"></span></label>
+                  <input class="form__slider form__slider_range" type="range" min="0" max="100" value="75" id="sliderRange" name="sliderRange">
+                </div>
+                <div class="form__file">
+                  <input type="file" name="file-input" id="file-input">
+                  <label for="file-input">
+                    <svg>
+                      <use href="/images/sprites.svg#attach-file"></use>
+                    </svg><span class="form__file-span">ПРИКРЕПИТЬ ФАЙЛ</span>
+                  </label>
+                  <div class="remove">
+                    <svg>
+                      <use href="/images/sprites.svg#close"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <button class="form__btn" type="submit" id="submitBtn">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <p class="footer__copyright">© 2018 «LOREMIPSUM.NET» Все права защищены.</p>
+          <div class="footer__wrap">
+            <div class="footer__paysystems">
+              <div class="footer__paysystem">
+                <svg>
+                  <use xlink:href="/images/sprites.svg#img-1"></use>
+                </svg>QIWI wallet
+              </div>
+              <div class="footer__paysystem">
+                <svg>
+                  <use xlink:href="/images/sprites.svg#img-2"></use>
+                </svg>Yandex Money
+              </div>
+              <div class="footer__paysystem">
+                <svg>
+                  <use xlink:href="/images/sprites.svg#img-3"></use>
+                </svg>Web Money
+              </div>
+            </div>
+            <div class="footer__contacts"><a href="mailto:info@ipsum228.com">
+                <svg>
+                  <use xlink:href="/images/sprites.svg#img-4"></use>
+                </svg>info@ipsum228.com</a><a href="#">
+                <svg>
+                  <use xlink:href="/images/sprites.svg#img-5"></use>
+                </svg>Мы вконтакте</a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/libs/svgxuse.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
